@@ -5,10 +5,10 @@
         <img src="../assets/icons/front.png" alt="Bangsal Kencana" class="bg-image">
         <div class="benda">
           <div class="right-arrow">
-            <img src="../assets/icons/right.png" alt=""  @click="active('right')">
+            <img src="../assets/icons/right.png" alt="" @click="active('right')">
           </div>
           <div class="in-arrow">
-            <img src="../assets/icons/in.png" alt=""  @click="active('inside')">
+            <img src="../assets/icons/in.png" alt="" @click="active('inside')">
           </div>
           <div class="tiang1">
             <img src="../assets/icons/tiang2.png" alt="Bangsal Kencana" class="w-[86%]" :class="{ 'hint': test }"
@@ -54,10 +54,14 @@
             <div class="info-box">
               <h1 class="text-center tnr text-4xl mb-10 mt-4">Bangsal Kencana</h1>
               <p class="info-text tnr mx-10">
-                      Bangsal Kencana adalah Bangunan utama Kraton Yogyakarta yang 
-terletak ditengah-tengah plataran Kedhaton di sebelah timur Gedhung Prabayeksa dan menghadap ke timur. Bangunan Bangsal Kencana 
-berbentuk Joglo Sinom Mangkurat. Bangsal kencana di bangun oleh Sultan Hamengku Buwono I pada tahun 1719 tahun Jawa / 1792 Masehi. 
-Bangsal Kencana sendiri memiliki arti  bangsal keemasan karena sebagian struktur kayu dilapisi emas. Bangsal Kencana memiliki fungsi sebagai tempat singgasana sultan serta digelarnya berbagai upacara penting penting di lingkungan kraton.
+                Bangsal Kencana adalah Bangunan utama Kraton Yogyakarta yang
+                terletak ditengah-tengah plataran Kedhaton di sebelah timur Gedhung Prabayeksa dan menghadap ke timur.
+                Bangunan Bangsal Kencana
+                berbentuk Joglo Sinom Mangkurat. Bangsal kencana di bangun oleh Sultan Hamengku Buwono I pada tahun 1719
+                tahun Jawa / 1792 Masehi.
+                Bangsal Kencana sendiri memiliki arti bangsal keemasan karena sebagian struktur kayu dilapisi emas.
+                Bangsal Kencana memiliki fungsi sebagai tempat singgasana sultan serta digelarnya berbagai upacara
+                penting penting di lingkungan kraton.
               </p>
               <h1 class="text-center tnr text-4xl mb-10 mt-4">Credit</h1>
               <p class="info-text tnr mx-10">Web: Sofwan</p>
@@ -68,8 +72,13 @@ Bangsal Kencana sendiri memiliki arti  bangsal keemasan karena sebagian struktur
               <p class="info-text tnr mx-10">Keterangan & Informasi: Erfa & Izzan</p>
               <p class="info-text tnr mx-10">Foto: Sofwan</p>
               <br>
-              <a class="info-text tnr mx-10" href="https://www.flaticon.com/free-icons/information" title="information icons">Information icons created by Freepik - Flaticon</a>
-              <p class="info-text1 tnr mx-10 mt-10 text-center text-blue-400">"Kalau Bandung Bondowoso bisa bikin candi dalam semalam, mas mbak ini tentu gabisa"</p>
+              <a class="info-text tnr mx-10" href="https://www.flaticon.com/free-icons/information"
+                title="information icons">Information icons created by Freepik - Flaticon</a>
+              <p class="info-text1 tnr mx-10 mt-10 text-center text-blue-400">"Kalau Bandung Bondowoso bisa bikin candi
+                dalam semalam, mas mbak ini tentu gabisa"</p>
+              <div class="qr-container">
+                <img src="../assets/icons/qr.png" alt="QR Code">
+              </div>
             </div>
           </div>
 
@@ -286,8 +295,8 @@ export default {
   position: absolute;
   width: 5%;
   height: 4%;
-  top: 16%;
-  left: 83%;
+  top: 3%;
+  left: 94%;
   z-index: 12;
   cursor: pointer;
 }
@@ -339,35 +348,70 @@ export default {
   /* Relative to the box */
   cursor: pointer;
 }
+
 .info-box {
   position: absolute;
-  width: 80%;          /* Increase width to 80% */
-  height: 80%;         /* Increase height to 80% */
-  top: 10%;            /* Adjust positioning from the top */
-  left: 10%;           /* Adjust positioning from the left */
-  background-color: rgba(255, 255, 255, 0.9);  /* Semi-transparent background */
-  padding: 30px;       /* Padding for space around the text */
-  border-radius: 10px; /* Rounded corners */
-  z-index: 12;         /* Layering on top */
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for the box */
-  overflow-y: auto;    /* Enable vertical scrolling if content exceeds box height */
+  width: 80%;
+  /* Increase width to 80% */
+  height: 80%;
+  /* Increase height to 80% */
+  top: 10%;
+  /* Adjust positioning from the top */
+  left: 10%;
+  /* Adjust positioning from the left */
+  background-color: rgba(255, 255, 255, 0.9);
+  /* Semi-transparent background */
+  padding: 30px;
+  /* Padding for space around the text */
+  border-radius: 10px;
+  /* Rounded corners */
+  z-index: 12;
+  /* Layering on top */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Shadow for the box */
+  overflow-y: auto;
+  /* Enable vertical scrolling if content exceeds box height */
 }
 
 .info-text {
-  color: #333;         /* Text color */
-  font-size: 1.2rem;   /* Font size */
-  text-align: justify; /* Justify the text */
-  line-height: 1.6;    /* Line height for readability */
-  word-wrap: break-word; /* Break long words if necessary */
+  color: #333;
+  /* Text color */
+  font-size: 1.2rem;
+  /* Font size */
+  text-align: justify;
+  /* Justify the text */
+  line-height: 1.6;
+  /* Line height for readability */
+  word-wrap: break-word;
+  /* Break long words if necessary */
 }
 
-.info-text1 {       /* Text color */
-  font-size: 1.2rem;   /* Font size */
-  text-align: center; /* Justify the text */
-  line-height: 1.6;    /* Line height for readability */
-  word-wrap: break-word; /* Break long words if necessary */
+.info-text1 {
+  /* Text color */
+  font-size: 1.2rem;
+  /* Font size */
+  text-align: center;
+  /* Justify the text */
+  line-height: 1.6;
+  /* Line height for readability */
+  word-wrap: break-word;
+  /* Break long words if necessary */
 }
+
 .tnr {
   font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.qr-container {
+  display: flex;       /* Flexbox layout */
+  justify-content: center; /* Center QR code horizontally */
+  width: 100%;         /* Ensure the QR code container takes full width */
+}
+
+.qr-container img {
+  @apply mt-10;
+  max-width: 200px;    /* Restrict the size of the QR code */
+  width: 50%;          /* Set QR code width to 50% of the container */
+  height: auto;        /* Maintain the aspect ratio */
 }
 </style>
